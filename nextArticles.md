@@ -8,3 +8,8 @@
 - [ ] Websites which I use to gain knowledge - e.g. raywenderlich
 - [ ] My Learning to-dos
 - [ ] [Understanding Storypoints](https://www.youtube.com/watch?v=VsSaolMtkKU)
+- [ ] Image Literals
+- [ ] Colors in XCAssets
+- [ ] Using Vector image using XCAssets
+- [ ] Stretchable image
+- [ ] Adding custom fonts in iOS app
