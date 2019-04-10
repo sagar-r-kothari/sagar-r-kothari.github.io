@@ -1,0 +1,30 @@
+### Android learnings to-dos
+
+- [x] How to define app icon?
+- [x] Where to add images / App resources?
+- [x] How do I show Splash Screen? - Finish activity with `finish()`
+- [x] Timer? - 
+- [x] Replace Activity - don’t go back = from splash screen to login
+- [ ] Floating Text view - textView with editing, hint text, guide text, error message
+- [ ] Button, TextField
+- [ ] TextField validations - email validation, password validation
+- [ ] ListView
+- [ ] Sectioned list
+- [ ] PickerView
+- [ ] DatePicker
+- [ ] TimePicker
+- [ ] RatingView
+- [ ] How to play in-app video?
+- [ ] Tab-Bar control
+- [ ] Left Side Menu
+- [ ] Left Side menu based centre activity change
+- [ ] Image Caching - fetch image from URL
+- [ ] Call web-service
+- [ ] Parse JSON - POJO
+- [ ] Google Sign in
+- [ ] Do we have something similar to cocoacontrols.com & cocoa pods for Android?
+- [ ] Firebase Authentication
+- [ ] Fabric integration 
+- [ ] Firebase firestorm integration
+- [ ] Fabric Release
+- [ ] Google Play Store release
