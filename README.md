@@ -1,2 +1,3 @@
-# sagar-r-kothari.github.io
+# Sagar R. Kothari
+
 Blog
