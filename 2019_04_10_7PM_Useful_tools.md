@@ -32,6 +32,8 @@
 	- For tasks management
 - Loom
 	- Chrome extension to capture videos
+- DuckDuckGo
+	- For anonymous searches
 
 
 #### Tools for own server
