@@ -14,6 +14,6 @@ Blog
 
 ###### - 07:00 PM [Tools which I prefer to use on macOS](2019_04_10_7PM_Useful_tools.md)
 
-###### [My Next todos](nextArticles.md)
+###### [Next article ideas](nextArticles.md)
 
 ##### [Android learning tasks](androidStudyPlan.md)

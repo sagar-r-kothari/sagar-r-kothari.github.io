@@ -7,3 +7,4 @@
 - [ ] Cocoa pods which I use
 - [ ] Websites which I use to gain knowledge - e.g. raywenderlich
 - [ ] My Learning to-dos
+- [ ] [Understanding Storypoints](https://www.youtube.com/watch?v=VsSaolMtkKU)
