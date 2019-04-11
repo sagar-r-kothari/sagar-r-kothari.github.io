@@ -1,6 +1,15 @@
 ### Generating App Icons from Single image named `1024x1024.png` 
+
+Image requirement
 - 1024 x 1024 pixels
 - at 72 pixels/inch dpi/resolutions
+- must be named `1024x1024.png` 
+
+How to run?
+- Copy following script. 
+- Paste it to a file with `.sh` extension
+- Put it next to your `1024x1024.png` image.
+- run it.
 
 ```sh
 cp 1024x1024.png AppIcon-20.png

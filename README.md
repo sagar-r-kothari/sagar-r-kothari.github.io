@@ -22,6 +22,14 @@
 
 ##### - 10:00 AM [Generate App Icons using single file](2019_04_11_10AM_GenerateAppIcons.md)
 
+##### - 11:00 AM [Precommit githook with swiftlint](2019_04_11_11AM_PreCommitGithook.md)
+
+##### - 12:00 PM [Sample Fastlane Script to upload to testflight](2019_04_11_12PM_FastlaneTestFlight.md)
+
+##### - 01:00 PM [Sample Fastlane Script to upload to fabric/crashlytics](2019_04_11_01PM_Fabric.md)
+
+##### - 02:00 PM [Sample Fastlane Script to upload to MS App Center](2019_04_11_02PM_AppCenter.md)
+
 ---
 
 ###### [Next article ideas](nextArticles.md)

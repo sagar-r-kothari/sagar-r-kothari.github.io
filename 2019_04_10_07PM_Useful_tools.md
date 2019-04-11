@@ -22,6 +22,10 @@
 	- Capturing GIFs from Screen
 - Itsycal
 	- Add a new calendar on macOS menu.
+- Evolus Pencil
+	- It can be handly tool for creating wireframes.
+- Omni Disk Sweeper
+	- To help you clean your storage.
 
 
 #### WebApps
