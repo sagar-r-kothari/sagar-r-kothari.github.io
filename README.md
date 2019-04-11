@@ -1,19 +1,29 @@
-# Sagar R. Kothari
+# Sagar R. Kothari's Blog
 
-Blog
+## 2019
 
-#### 2019
+### April
 
-##### April
+---
 
-###### - 12:00 PM [What's new in Swift 5?](2019_04_10_12PM_Swift5.md)
+#### 10th April, 2019
 
-###### - 04:00 PM [Xcode shortcuts which I use frequently](2019_04_10_4PM_XcodeShortCuts.md)
+##### - 12:00 PM [What's new in Swift 5?](2019_04_10_12PM_Swift5.md)
 
-###### - 06:00 PM [How to extract timezone from ISO8601 Date?](2019_04_10_6PM_TimezoneFromISO8601Date.md)
+##### - 04:00 PM [Xcode shortcuts which I use frequently](2019_04_10_04PM_XcodeShortCuts.md)
 
-###### - 07:00 PM [Tools which I prefer to use on macOS](2019_04_10_7PM_Useful_tools.md)
+##### - 06:00 PM [How to extract timezone from ISO8601 Date?](2019_04_10_06PM_TimezoneFromISO8601Date.md)
+
+##### - 07:00 PM [Tools which I prefer to use on macOS](2019_04_10_07PM_Useful_tools.md)
+
+---
+
+#### 11th April, 2019
+
+##### - 10:00 AM [Generate App Icons using single file](2019_04_11_10AM_GenerateAppIcons.md)
+
+---
 
 ###### [Next article ideas](nextArticles.md)
 
-##### [Android learning tasks](androidStudyPlan.md)
+###### [Android learning tasks](androidStudyPlan.md)
