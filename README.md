@@ -30,6 +30,10 @@
 
 ##### - 02:00 PM [Sample Fastlane Script to upload to MS App Center](2019_04_11_02PM_AppCenter.md)
 
+##### - 03:00 PM [Important Folder Locations for iOS App Developer](2019_04_11_03PM_ImportantFolders.md)
+
+##### - 04:00 PM [Mocking Data](2019_04_11_04PM_MockingData.md)
+
 ---
 
 ###### [Next article ideas](nextArticles.md)

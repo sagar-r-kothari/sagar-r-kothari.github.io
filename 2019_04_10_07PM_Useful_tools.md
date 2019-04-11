@@ -26,7 +26,21 @@
 	- It can be handly tool for creating wireframes.
 - Omni Disk Sweeper
 	- To help you clean your storage.
+- SQLiteBrowser
+	- http://sqlitebrowser.org/
 
+
+#### Extensions which I prefer to use
+
+- DuckDuckGo
+	- DuckDuckGo Privacy Essentials
+	- https://chrome.google.com/webstore/detail/duckduckgo-privacy-essent/bkdgflcldnnnapblkhphbgpggdiikppg
+- LastPass
+- Loom
+- uBlockOrigin
+- Full Page Screen Capture
+- DarkMode
+	- https://mybrowseraddon.com/dark-mode.html
 
 #### WebApps
 
