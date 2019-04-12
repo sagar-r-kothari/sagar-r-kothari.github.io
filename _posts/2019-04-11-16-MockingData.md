@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Mocking Data"
+date:   2019-04-11 16:00:00 +0530
+categories: Mock
+---
+
 ### Mocking data with `Mocky` and [`randomuser`](https://randomuser.me/)
 
 I personally recommend using [`Mocky`](https://www.mocky.io/) to Mock your HTTP responses to test your REST API.

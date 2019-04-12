@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "fastlane TestFlight"
+date:   2019-04-11 12:00:00 +0530
+categories: CI-CD Fastlane TestFlight
+---
+
 ### Sample fastlane script to upload your app to TestFlight
 
 ```py

@@ -1,4 +1,9 @@
-### Tools that I prefer to use on macOS
+---
+layout: post
+title:  "Tools that I prefer to use on macOS"
+date:   2019-04-10 19:00:00 +0530
+categories: macOS
+---
 
 #### Native macOS apps
 

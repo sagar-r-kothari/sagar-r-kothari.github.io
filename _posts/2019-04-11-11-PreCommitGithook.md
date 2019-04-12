@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Pre-commit script"
+date:   2019-04-11 11:00:00 +0530
+categories: Git
+---
+
 ### Pre-commit script for iOS projects for automated code review
 
 #### Step 1. Navigate to project directory using terminal

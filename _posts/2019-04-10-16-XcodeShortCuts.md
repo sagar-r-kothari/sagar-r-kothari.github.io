@@ -1,4 +1,9 @@
-### Xcode shortcuts which I use frequently
+---
+layout: post
+title:  "Xcode shortcuts which I use frequently"
+date:   2019-04-10 16:00:00 +0530
+categories: Xcode
+---
 
 | Shortcut | Usage |
 |------------|----------------|

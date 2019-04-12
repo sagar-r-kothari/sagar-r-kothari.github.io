@@ -36,6 +36,10 @@
 
 ---
 
+#### 12th April, 2019
+
+##### - 10:00 AM [TableView hide searchBar](2019_04_12_10AM_TableViewHideSearchBar.md)
+
 ###### [Next article ideas](nextArticles.md)
 
 ###### [Android learning tasks](androidStudyPlan.md)

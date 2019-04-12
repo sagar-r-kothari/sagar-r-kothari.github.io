@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Generating App Icons"
+date:   2019-04-11 10:00:00 +0530
+categories: Script
+---
+
 ### Generating App Icons from Single image named `1024x1024.png` 
 
 Image requirement

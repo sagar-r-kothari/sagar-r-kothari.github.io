@@ -1,4 +1,9 @@
-## How to extract timezone from ISO8601 Date?
+---
+layout: post
+title:  "How to extract timezone from ISO8601 Date?"
+date:   2019-04-10 18:00:00 +0530
+categories: Date TimeZone
+---
 
 Let's say, you've a date ISO8601 date.
 
