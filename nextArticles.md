@@ -1,6 +1,6 @@
 ### Next article ideas
 
-- [ ] Most commonly used git commands on zsh
+- [x] Most commonly used git commands on zsh
 - [ ] Most commonly used terminal commands on zsh
 - [x] Fastlane script which I use
 - [ ] Setting up Jenkins - my guide
