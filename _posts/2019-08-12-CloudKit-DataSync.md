@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "iOS 13 CloudKit Data Sync"
