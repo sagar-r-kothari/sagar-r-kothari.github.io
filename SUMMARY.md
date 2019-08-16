@@ -38,6 +38,13 @@
     * [Generating App Icons](technical-items/shell-scripting/generating-app-icons.md)
   * [Quality Assurance](technical-items/quality-assurance/README.md)
     * [Mocking Data](technical-items/quality-assurance/mocking-data.md)
+* [My Bookmarks](my-bookmarks/README.md)
+  * [Online Tools](my-bookmarks/online-tools.md)
+  * [Blogs I follow](my-bookmarks/blogs-i-follow.md)
+  * [Swift UI Learning Items](my-bookmarks/swift-ui-learning-items.md)
+  * [iOS links for Study](my-bookmarks/ios-links-for-study.md)
+  * [iOS Job Postings](my-bookmarks/ios-job-postings.md)
+  * [Helpful for iOS](my-bookmarks/helpful-for-ios.md)
 
 ## My Apps
 
