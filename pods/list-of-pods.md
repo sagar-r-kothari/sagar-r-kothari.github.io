@@ -1,0 +1,35 @@
+---
+description: which I would recommend or I use frequently
+---
+
+# List of Pods
+
+#### _SwiftDate_
+
+* Deal with ISO8601 dates easily
+* Other date related functionality makes your life easy
+
+#### _CocoaLumberjack/Swift_
+
+* Logging utility
+
+#### _Moya_
+
+* For network calls
+
+#### _Kingfisher_
+
+* For image caching
+
+#### _Instabug_
+
+* For better crash management
+
+#### _ParallaxHeader_
+
+* For pull to stretch header
+
+#### _BadgeHub_
+
+* For applying badges to any views
+
