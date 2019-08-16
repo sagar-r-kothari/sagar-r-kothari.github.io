@@ -24,7 +24,7 @@
   * [fastlane AppCenter](ci-cd/fastlane-appcenter.md)
 * [Pods](pods/README.md)
   * [Using CocoaLumberJack](pods/using-cocoalumberjack.md)
-  * [Adding acknowledgements for pods](pods/adding-acknowledgements-for-pods.md)
+  * [Adding acknowledgements](pods/adding-acknowledgements-for-pods.md)
   * [List of Pods](pods/list-of-pods.md)
 * [macOS](macos/README.md)
   * [Tools for macOS](macos/tools-for-macos.md)

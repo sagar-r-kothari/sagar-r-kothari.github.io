@@ -2,7 +2,7 @@
 description: Acknowledge for libraries which you're using in your app
 ---
 
-# Adding acknowledgements for pods
+# Adding acknowledgements
 
 Your `Podfile` should look like this.
 
