@@ -2,7 +2,9 @@
 
 * [About Me](README.md)
 * [Swift](swift/README.md)
-  * [What's new in Swift 5?](swift/whats-new-in-swift-5.md)
+  * [Swift 5](swift/swift-5/README.md)
+    * [What's new in Swift 5?](swift/swift-5/whats-new-in-swift-5.md)
+    * [Property Wrappers](swift/swift-5/property-wrappers.md)
   * [isRunningLive](swift/isrunninglive.md)
   * [Formatting Double as currency](swift/formatting-double-as-currency.md)
   * [Generate SHA256](swift/generate-sha256.md)
@@ -27,10 +29,12 @@
 * [macOS](macos/README.md)
   * [Tools for macOS](macos/tools-for-macos.md)
   * [Convert SVG to PNG](macos/convert-svg-to-png.md)
+  * [Start Apache Server](macos/start-apache-server.md)
 * [Shell Scripting](shell-scripting/README.md)
   * [Generating App Icons](shell-scripting/generating-app-icons.md)
 * [Git](git/README.md)
   * [Pre-commit script](git/pre-commit-script.md)
+  * [Git commands on zsh](git/git-commands-on-zsh.md)
 * [Quality Assurance](quality-assurance/README.md)
   * [Mocking Data](quality-assurance/mocking-data.md)
 
