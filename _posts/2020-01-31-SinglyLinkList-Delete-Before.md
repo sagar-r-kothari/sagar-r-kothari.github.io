@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Singly Link List - Inverse"
-date: 2020-01-30 06:10:00 +0530
+title: "Singly Link List - Delete Before"
+date: 2020-01-31 09:20:00 +0530
 categories: SinglyLinkList DataStructure
 ---
 
@@ -32,17 +32,21 @@ struct SinglyLinkList {
         return currentNode
     }
 
-    mutating func inverse() {
+    mutating func deleteBefore(_ value: Int) {
         guard head != nil else { return }
         var current = head
-        var prev, next: SinglyLinkListNode?
-        while current != nil {
-            next = current?.next
-            current?.next = prev
-            prev = current
-            current = next
+        if current?.value == value || current?.next?.value == value {
+            head = head?.next
+        } else {
+            var previous = head
+            while current?.next != nil, current?.next?.value != value {
+                previous = current
+                current = current?.next
+            }
+            if current?.next?.value == value, previous != nil {
+                previous?.next = current?.next
+            }
         }
-        head = prev
     }
 }
 ```

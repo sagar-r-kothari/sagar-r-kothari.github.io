@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Data Structure - Singly Link List - Insert Before"
+title: "Singly Link List - Insert Before"
 date: 2020-01-31 07:20:00 +0530
-categories: Swift Singly Link List Data Structure
+categories: SinglyLinkList DataStructure
 ---
 
 ```swift

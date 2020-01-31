@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Singly Link List - Insert at End"
-date: 2020-01-30 07:20:00 +0530
+title: "Singly Link List - Delete Head"
+date: 2020-01-31 11:20:00 +0530
 categories: SinglyLinkList DataStructure
 ---
 
@@ -32,12 +32,9 @@ struct SinglyLinkList {
         return currentNode
     }
 
-    mutating func insertAtEnd(_ value: Int) {
-        guard
-            head != nil, let tail = tail
-            else { head = SinglyLinkListNode(value); return }
-        let node = SinglyLinkListNode(value)
-        tail.next = node
+    mutating func deleteAtHead() {
+        guard head != nil else { return }
+        head = head?.next
     }
 }
 ```

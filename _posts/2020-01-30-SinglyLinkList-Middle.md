@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Data Structure - Singly Link List - Display Middle"
+title: "Singly Link List - Display Middle"
 date: 2020-01-30 06:15:00 +0530
-categories: Swift Singly Link List Data Structure
+categories: SinglyLinkList DataStructure
 ---
 
 ```swift

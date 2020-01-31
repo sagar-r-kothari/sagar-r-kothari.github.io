@@ -2,7 +2,7 @@
 layout: post
 title: "Fastlane just compile or build for iOS Simulator"
 date: 2020-01-31 06:15:00 +0530
-categories: Fastlane Script CI-CD
+categories: Fastlane CI-CD
 ---
 
 1. Add Following lane to your `fastlane` file.

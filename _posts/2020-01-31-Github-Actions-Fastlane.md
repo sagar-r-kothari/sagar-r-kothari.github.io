@@ -2,7 +2,7 @@
 layout: post
 title: "Github Actions with fastlane"
 date: 2020-01-31 06:30:00 +0530
-categories: Fastlane Script CI-CD GithubActions
+categories: Fastlane CI-CD
 ---
 
 1. Open Repository locally.
