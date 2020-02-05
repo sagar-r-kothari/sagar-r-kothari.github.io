@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Binary Tree - pre-order traversal"
-date: 2020-02-05 04:20:00 +0530
+title: "Binary Tree - in order traversal"
+date: 2020-02-05 06:20:00 +0530
 categories: BinaryTree DataStructure
 ---
 
@@ -22,11 +22,11 @@ class BinaryTreeNode {
 struct BinaryTree {
     var root: BinaryTreeNode?
 
-    func preOrderDisplay(_ node: BinaryTreeNode?) {
+    func inOrderDisplay(_ node: BinaryTreeNode?) {
         guard let node = node else { return }
+        inOrderDisplay(node.left)
         print("\(node.value) ")
-        preOrderDisplay(node.left)
-        preOrderDisplay(node.right)
+        inOrderDisplay(node.right)
     }
 }
 ```
