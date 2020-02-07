@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SwiftUI - UIImagePickerView"
-date: 2020-02-07 04:20:00 +0530
+date: 2020-02-07 05:20:00 +0530
 categories: SwiftUI
 ---
 
