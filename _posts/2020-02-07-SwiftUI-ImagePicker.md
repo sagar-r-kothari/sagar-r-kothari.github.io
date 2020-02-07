@@ -10,12 +10,19 @@ Following code snippet illustrates how to use image picker.
 ```swift
 struct SomeViewOfYourProject: View {
     @State private var showImagePicker: Bool = false
-    @State private var image: Image? = nil
+    @State private var uiImage: UIImage? = nil
+
+    var image: Image? {
+        guard let uiImage = uiImage else { return nil }
+        return Image(uiImage: uiImage)
+    }
 
     var body: some View {
         VStack {
             Text("Hello World")
             assignPhotoButton
+        }.sheet(isPresented: $showImagePicker) {
+            PhotoCaptureView(showImagePicker: self.$showImagePicker, image: self.$uiImage)
         }
     }
 
@@ -43,7 +50,7 @@ Following code snippet, just copy and paste it into a file inside project.
 ```swift
 struct ImagePicker: UIViewControllerRepresentable {
     @Binding var isShown: Bool
-    @Binding var image: Image?
+    @Binding var uiImage: UIImage?
 
     func updateUIViewController(
         _ uiViewController: UIImagePickerController,
@@ -51,7 +58,7 @@ struct ImagePicker: UIViewControllerRepresentable {
     }
 
     func makeCoordinator() -> ImagePickerCordinator {
-        ImagePickerCordinator(isShown: $isShown, image: $image)
+        ImagePickerCordinator(isShown: $isShown, image: $uiImage)
     }
 
     func makeUIViewController(
@@ -64,11 +71,11 @@ struct ImagePicker: UIViewControllerRepresentable {
     }
 }
 
-class ImagePickerCordinator : NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
+class ImagePickerCordinator : NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     @Binding var isShown: Bool
-    @Binding var image: Image?
+    @Binding var image: UIImage?
 
-    init(isShown : Binding<Bool>, image: Binding<Image?>) {
+    init(isShown : Binding<Bool>, image: Binding<UIImage?>) {
         _isShown = isShown
         _image   = image
     }
@@ -76,8 +83,7 @@ class ImagePickerCordinator : NSObject, UINavigationControllerDelegate, UIImageP
     func imagePickerController(
         _ picker: UIImagePickerController,
         didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let uiImage = info[UIImagePickerController.InfoKey.editedImage] as! UIImage
-        image = Image(uiImage: uiImage)
+        image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
         isShown = false
     }
 
@@ -88,16 +94,10 @@ class ImagePickerCordinator : NSObject, UINavigationControllerDelegate, UIImageP
 
 struct PhotoCaptureView: View {
     @Binding var showImagePicker: Bool
-    @Binding var image: Image?
+    @Binding var image: UIImage?
 
     var body: some View {
-        ImagePicker(isShown: $showImagePicker, image: $image)
-    }
-}
-
-struct PhotoCaptureView_Previews: PreviewProvider {
-    static var previews: some View {
-        PhotoCaptureView(showImagePicker: .constant(false), image: .constant(Image("")))
+        ImagePicker(isShown: $showImagePicker, uiImage: $image)
     }
 }
 ```
