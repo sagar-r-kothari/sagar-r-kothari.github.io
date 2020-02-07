@@ -2,7 +2,7 @@
 layout: post
 title: "SwiftUI - Pop a view from Navigation"
 date: 2020-02-07 04:20:00 +0530
-categories: SwiftUI
+categories: SwiftUI Navigation
 ---
 
 ```swift
