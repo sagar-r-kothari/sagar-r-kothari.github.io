@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Swift UIElevated Card View"
+title: "SwiftUI - Elevated Card View"
 date: 2020-02-12 05:20:00 +0530
 categories: SwiftUI
 ---
