@@ -11,7 +11,7 @@ categories: SwiftUI
 
 #### Data Structure
 
-```
+```swift
 struct ItemData: Identifiable {
     var id: Int
     var title: String
