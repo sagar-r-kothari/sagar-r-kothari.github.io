@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Swift - Date in dd-MMM or dd-MMM-yyy format"
+title: "Swift - Date in dd-MMM or dd-MMM-yy format"
 date: 2020-02-18 06:20:00 +0530
 categories: Swift
 ---
@@ -9,7 +9,7 @@ I came across this siutation.
 Show date without year if it's same year else show with year.
 
 1. E.g. If it's 15-Feb of this year, just show as `15-Feb`
-2. E.g. If it's 15-Feb-2017 (other than current year), show with year - `15-Feb-2017`
+2. E.g. If it's 15-Feb-2017 (other than current year), show with year - `15-Feb-17`
 
 I've created a date extension for above requirement, which is as follows.
 
