@@ -16,7 +16,10 @@ class YourTableViewCell: UITableViewCell { // 1. It can be any view
     DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
       if #available(iOS 13.0, *) {
       	// 3. Add hover gesture and save actual color applied in storyboard / xib
-        let hover = UIHoverGestureRecognizer(target: self, action: #selector(self.hovering(_:)))
+        let hover = UIHoverGestureRecognizer(
+          target: self, 
+          action: #selector(self.hovering(_:))
+        )
         self.addGestureRecognizer(hover)
         self.color = self.backgroundColor
       }
