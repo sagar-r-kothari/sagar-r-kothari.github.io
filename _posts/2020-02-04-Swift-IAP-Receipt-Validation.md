@@ -2,7 +2,7 @@
 layout: post
 title: "Swift - In App Purchase Receipt Validation"
 date: 2020-02-04 07:20:00 +0530
-categories: Swift
+categories: InAppPurchase
 ---
 
 ```swift

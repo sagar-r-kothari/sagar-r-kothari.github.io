@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "iOS 13 CloudKit Data Sync"
+title: "iOS 13 iCloud Data Sync"
 date: 2019-08-12 17:00:00 +0530
-categories: CloudKit
+categories: iCloud
 ---
 
 I referred to following article for CloudKit Data Sync on iOS 13
