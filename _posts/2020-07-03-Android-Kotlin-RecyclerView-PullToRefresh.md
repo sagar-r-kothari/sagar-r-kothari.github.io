@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Android - Kotlin - RecyclerView Example"
-date: 2020-07-03 07:20:00 +0530
+title: "Android - Kotlin - RecyclerView + Pull To Refresh"
+date: 2020-07-03 09:20:00 +0530
 categories: Android Kotlin
 ---
 
@@ -11,6 +11,7 @@ categories: Android Kotlin
 dependencies {
     ...
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
     ...
 }
 ```
@@ -61,11 +62,42 @@ class MainListAdapter (
 ### MainActivity.kt
 
 ```kotlin
+class User(
+    val login: String,
+    val id: Int,
+    val avatar_url: String
+)
+
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         listView.adapter = MainListAdapter(listOf<ListItem>(ListItem("Sagar", "Kothari")))
+        swipeRefresh.setOnRefreshListener {
+            getUsers()
+        }
+        getUsers()
+    }
+
+    fun getUsers() {
+        swipeRefresh.isRefreshing = true
+        listView.adapter = MainListAdapter(listOf<ListItem>())
+        val queue = Volley.newRequestQueue(this)
+        val url = "https://api.github.com/users"
+        val stringRequest = StringRequest(Request.Method.GET, url, Response.Listener {
+            val gson = Gson()
+            val arrayUsers = object : TypeToken<Array<User>>() {}.type
+            var users: Array<User> = gson.fromJson(it,  arrayUsers)
+            val list = users.map { ListItem(it.login, it.avatar_url) }
+            listView.adapter = MainListAdapter(list)
+            swipeRefresh.isRefreshing = false
+        }, Response.ErrorListener {
+            println("Failed Getting users")
+            Toast.makeText(this, "Something went wrong. Please try again.", Toast.LENGTH_SHORT)
+            swipeRefresh.isRefreshing = false
+        })
+        queue.add(stringRequest)
     }
 }
 ```
@@ -75,18 +107,27 @@ class MainActivity : AppCompatActivity() {
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
