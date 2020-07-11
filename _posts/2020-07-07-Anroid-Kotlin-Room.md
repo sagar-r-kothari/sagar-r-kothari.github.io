@@ -10,12 +10,12 @@ categories: Android Kotlin
 ![Preview Image](/assets/andoid/name-room-kotlin-list.png)
 ![Preview Image](/assets/andoid/name-room-kotlin-add.png)
 
-Q: What are we trying to achieve here?
-A: We're trying to store & show list of Names.
+- Q: What are we trying to achieve here?
+- A: We're trying to store & show list of Names.
 
 ### AndroidManifest.xml
 
-1. Let's add permissions first.
+Let's add permissions first.
 
 ```xml
 <uses-permission
@@ -58,7 +58,7 @@ dependencies {
 
 ### ListItem.kt
 
-3. List item data class
+List item data class
 
 ```kotlin
 data class ListItem (
@@ -69,7 +69,7 @@ data class ListItem (
 
 ### MainListAdapter.kt
 
-4. Create Adapter for RecyclerView List - which will display list of words.
+Create Adapter for RecyclerView List - which will display list of words.
 
 
 ```kotlin
@@ -108,8 +108,8 @@ class MainListAdapter : RecyclerView.Adapter<MainListAdapter.ViewHolder>() {
 
 ### list_main.xml
 
-5. Layout file for single row - which is used in above adapter.
-ImageView we'll be using in next article.
+- Layout file for single row - which is used in above adapter.
+- ImageView we'll be using in next article.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -161,7 +161,7 @@ ImageView we'll be using in next article.
 
 ### NameTable.kt
 
-6. Create table. For this article, we're creating name table.
+Create table. For this article, we're creating name table.
 
 ```kotlin
 import androidx.room.ColumnInfo
@@ -177,7 +177,7 @@ class Name(
 
 ### NameDAO.kt
 
-7. Data Access Object - An interface - with which we'll be able to access Name table.
+Data Access Object - An interface - with which we'll be able to access Name table.
 
 ```kotlin
 import androidx.lifecycle.LiveData
@@ -201,7 +201,7 @@ interface NameDao {
 
 ### NameRepository.kt
 
-8. Repository with which we'll be able to insert / delete / update / read.
+Repository with which we'll be able to insert / delete / update / read.
 
 ```kotlin
 import androidx.lifecycle.LiveData
@@ -218,7 +218,7 @@ class NameRepository(private val nameDao: NameDao) {
 
 ### NameRootDatabase.kt
 
-9. Database connection
+Database connection
 
 ```kotlin
 import android.content.Context
@@ -256,7 +256,7 @@ public abstract class NameRoomDatabase : RoomDatabase() {
 
 ### NameViewModel.kt
 
-10. ViewModel for async, easy, quick access to Name table.
+ViewModel for async, easy, quick access to Name table.
 
 ```kotlin
 import android.app.Application
@@ -285,7 +285,7 @@ class NameViewModel(application: Application) : AndroidViewModel(application) {
 
 ### activity_main.xml
 
-11. Layout for MainActivity
+Layout for MainActivity
 
 ```xml
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -318,7 +318,7 @@ tools:context=".MainActivity">
 
 ### activity_additem.xml
 
-12. Layout for AddItemActivity
+Layout for AddItemActivity
 
 ```xml
 <androidx.constraintlayout.widget.ConstraintLayout
