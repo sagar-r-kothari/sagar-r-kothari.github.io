@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android - Kotlin - RetroFit RecyclerView, Pull to load more, pull to refresh"
+title: "Android - Kotlin - RetroFit, RecyclerView, Pull to load more, pull to refresh"
 date: 2020-07-05 07:20:00 +0530
 categories: Android Kotlin
 ---
@@ -183,11 +183,21 @@ class MainActivity : AppCompatActivity() {
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listView"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
