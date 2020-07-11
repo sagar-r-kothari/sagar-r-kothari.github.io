@@ -75,7 +75,7 @@ class GetUsersService {
 
     interface GitHubService {
         @GET("users?")
-        fun listRepos(@Query("since") since: Int?): Call<List<User?>?>
+        fun listUsers(@Query("since") since: Int?): Call<List<User?>?>
     }
 
     private val baseUrl = "https://api.github.com/"
@@ -87,7 +87,7 @@ class GetUsersService {
     private var lastId: Int? = null
 
     private fun fetchData(value: Int?, onResult: (List<User?>?) -> Unit) {
-        val call = service.listRepos(value)
+        val call = service.listUsers(value)
         call.enqueue(
             object : Callback<List<User?>?> {
                 override fun onFailure(call: Call<List<User?>?>, t: Throwable) {
