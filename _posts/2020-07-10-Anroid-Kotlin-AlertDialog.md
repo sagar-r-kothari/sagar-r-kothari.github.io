@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             }
             .setNegativeButton("No", null)
             .setOnDismissListener {
-                println("Oh! User dismissed without pressing any button.")
+                println("User dismissed without pressing any button.")
                 finishAffinity()
             }
             .setIcon(android.R.drawable.ic_dialog_alert)
