@@ -46,11 +46,10 @@ class MainActivity : AppCompatActivity() {
             AlertDialog.Builder(this)
                 .setTitle("Found rooted system")
                 .setMessage("Please install on an android which isn't rooted")
-                .setPositiveButton("Ohh! Okay.") { _, _ ->
+                .setPositiveButton("Okay.") { _, _ ->
                     finishAffinity()
                 }
                 .setOnDismissListener {
-                    println("Oh dismissed.")
                     finishAffinity()
                 }
                 .setIcon(android.R.drawable.ic_dialog_alert)

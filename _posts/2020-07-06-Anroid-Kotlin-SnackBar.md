@@ -7,7 +7,7 @@ categories: Android Kotlin
 
 ### build.gradle (Module: app)
 
-```
+```rb
 dependencies {
     ...
     implementation 'com.google.android.material:material:1.1.0'

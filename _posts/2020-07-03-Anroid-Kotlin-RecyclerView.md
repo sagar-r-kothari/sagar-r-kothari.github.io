@@ -7,7 +7,7 @@ categories: Android Kotlin
 
 ### build.gradle (Module: app)
 
-```
+```rb
 dependencies {
     ...
     implementation 'androidx.recyclerview:recyclerview:1.1.0'

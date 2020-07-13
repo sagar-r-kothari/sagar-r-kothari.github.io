@@ -7,7 +7,7 @@ categories: Android Kotlin
 
 ### build.gradle (Module: app)
 
-```
+```rb
 dependencies {
     ...
     implementation 'com.github.bumptech.glide:glide:4.9.0'

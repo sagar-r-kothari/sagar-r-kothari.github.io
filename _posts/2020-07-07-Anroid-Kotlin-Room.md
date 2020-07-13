@@ -28,7 +28,7 @@ Let's add permissions first.
 
 2. And time to add dependencies.
 
-```
+```rb
 apply plugin: 'kotlin-kapt'
 dependencies {
     ...

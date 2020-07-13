@@ -7,7 +7,7 @@ categories: Android Kotlin
 
 ### build.gradle (Module: app)
 
-```
+```rb
 dependencies {
     ...
     implementation 'com.android.volley:volley:1.1.1'
