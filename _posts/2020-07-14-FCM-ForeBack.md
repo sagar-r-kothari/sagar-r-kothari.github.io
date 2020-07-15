@@ -80,7 +80,7 @@ Only If app is in background / killed, show notification
         // We MUST READ values from Data
         val messageText = message.data.get("body") ?: "No Message Body"
         var clickAction = message.data.get("click_action") ?: ""
-        val title = message.data.get("title") ?: "DataRobot"
+        val title = message.data.get("title") ?: "MyApplication"
         val components = clickAction.split("?type=")
         clickAction = if (components.count() == 2) components[1] else ""
         if(isAppInForeground && clickAction.isNotBlank()) {
