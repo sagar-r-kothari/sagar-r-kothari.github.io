@@ -10,7 +10,6 @@ categories: Android Kotlin
 ![Preview Image](/assets/andoid/options-menu-1.png)
 ![Preview Image](/assets/andoid/options-menu-2.png)
 
-
 ### app/res/menu/main_menu_options.xml
 
 ```xml
