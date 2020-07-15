@@ -14,7 +14,6 @@ categories: Android Kotlin
 ### build.gradle (Module: app)
 
 ```rb
-apply plugin: 'kotlin-kapt'
 dependencies {
     ...
     // Material design
