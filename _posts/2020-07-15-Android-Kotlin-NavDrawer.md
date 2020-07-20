@@ -257,3 +257,33 @@ Here is how xml would look like of `activity_main.xml`
 </LinearLayout>
 ```
 
+### Step 9: MainActivity.kt
+
+Access Drawer Menu & add listners
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // Toolbar is support bar
+        setSupportActionBar(toolbar)
+
+        // Set Toggle - open-close menu
+        val toggle = ActionBarDrawerToggle(this, drawerLayout, toolbar, 0, 0)
+        drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
+
+        // On click of menu
+        navView.setNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.navEdit -> {
+                    Toast.makeText(this,"Edit profile clicked", Toast.LENGTH_LONG).show()
+                }
+            }
+            return@setNavigationItemSelectedListener true
+        }
+    }
+}
+```
