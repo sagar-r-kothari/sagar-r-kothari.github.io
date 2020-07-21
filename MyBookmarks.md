@@ -43,3 +43,33 @@ title: My Bookmarks
 - [Swift Protocols](https://swiftindepth.com/2019-01-01/reasoning-about-protocols)
 - [PointFree Swift Course](https://www.pointfree.co/)
 - [Functional Swift](https://www.youtube.com/channel/UCNFUO_7gsLBk4YTmZoSTk5g)
+
+### Android CheckList
+
+- [x] Pull to load more
+- [x] Pull to refresh
+- [ ] Loading Indicator
+- [ ] Alternate Row
+- [ ] Buttons within a row & on tap - push intent
+- [x] Push new screen
+- [x] Fab Action
+- [ ] Triple Dot / Settings menu 
+- [ ] Orientation Support
+- [ ] Swipe on a row
+- [ ] Tap and hold to delete
+- [ ] Section Headers
+- [ ] Segment
+- [ ] Fragment
+- [ ] Resize Image
+- [ ] Access Camera
+- [ ] Access Photo Gallery
+- [ ] Ask for permissions properly
+- [ ] Access Shared Preferences
+- [ ] Save encrypted files to local storage
+- [ ] Detect Current Location
+- [ ] Show Google Map
+
+### Android Articles I am referring to
+
+- https://thesimplycoder.com/151/using-android-tablayout-and-viewpager-tutorial/
+- https://www.androdocs.com/kotlin/implementing-navigation-drawer-in-android-app-using-kotlin.html
