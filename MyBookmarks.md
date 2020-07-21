@@ -71,5 +71,6 @@ title: My Bookmarks
 
 ### Android Articles I am referring to
 
-- https://thesimplycoder.com/151/using-android-tablayout-and-viewpager-tutorial/
-- https://www.androdocs.com/kotlin/implementing-navigation-drawer-in-android-app-using-kotlin.html
+- [ ] [Tab Layout](https://thesimplycoder.com/151/using-android-tablayout-and-viewpager-tutorial/)
+- [x] [Navigation Drawer](https://www.androdocs.com/kotlin/implementing-navigation-drawer-in-android-app-using-kotlin.html)
+- [ ] [Camera Access](http://www.kotlincodes.com/kotlin/camera-intent-with-kotlin-android/)
