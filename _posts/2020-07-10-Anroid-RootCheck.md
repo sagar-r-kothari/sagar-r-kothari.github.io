@@ -10,12 +10,12 @@ categories: Android Kotlin
 ```kotlin
 import java.io.File
 
-class RootChecker {
-    fun isRooted(): Boolean {
+public class RootChecker {
+    private fun isRooted(): Boolean {
         return findBinary("su")
     }
 
-    fun findBinary(binaryName: String): Boolean {
+    private fun findBinary(binaryName: String): Boolean {
         var found = false
         if (!found) {
             val places = arrayOf(
@@ -31,6 +31,23 @@ class RootChecker {
         }
         return found
     }
+
+    public fun check(context: Context) {
+        val activity = context as Activity?
+        if (RootChecker().isRooted() && activity != null) {
+            AlertDialog.Builder(context)
+                .setTitle("Found rooted system")
+                .setMessage("Please install on an android which isn't rooted")
+                .setPositiveButton("Okay.") { _, _ ->
+                    finishAffinity(activity)
+                }
+                .setOnDismissListener {
+                    finishAffinity(activity)
+                }
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show()
+        }
+    }
 }
 ```
 
@@ -38,24 +55,10 @@ class RootChecker {
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        if (RootChecker().isRooted()) {
-            AlertDialog.Builder(this)
-                .setTitle("Found rooted system")
-                .setMessage("Please install on an android which isn't rooted")
-                .setPositiveButton("Okay.") { _, _ ->
-                    finishAffinity()
-                }
-                .setOnDismissListener {
-                    finishAffinity()
-                }
-                .setIcon(android.R.drawable.ic_dialog_alert)
-                .show()
-        }
+        RootChecker().check(this)
     }
-
 }
 ```

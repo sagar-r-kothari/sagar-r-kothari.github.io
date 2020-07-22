@@ -74,3 +74,4 @@ title: My Bookmarks
 - [ ] [Tab Layout](https://thesimplycoder.com/151/using-android-tablayout-and-viewpager-tutorial/)
 - [x] [Navigation Drawer](https://www.androdocs.com/kotlin/implementing-navigation-drawer-in-android-app-using-kotlin.html)
 - [ ] [Camera Access](http://www.kotlincodes.com/kotlin/camera-intent-with-kotlin-android/)
+- [ ] [New Navigation](https://developer.android.com/guide/navigation/navigation-getting-started)

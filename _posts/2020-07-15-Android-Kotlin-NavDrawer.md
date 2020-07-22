@@ -276,7 +276,7 @@ class MainActivity : AppCompatActivity() {
         toggle.syncState()
 
         // On click of menu
-        navView.setNavigationItemSelectedListener {
+        navHeader.setNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.navEdit -> {
                     Toast.makeText(this,"Edit profile clicked", Toast.LENGTH_LONG).show()
