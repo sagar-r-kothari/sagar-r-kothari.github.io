@@ -24,7 +24,7 @@ github_username:  sagar-r-kothari
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
 paginate: 5
