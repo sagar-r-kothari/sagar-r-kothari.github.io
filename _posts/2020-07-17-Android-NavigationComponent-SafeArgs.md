@@ -18,13 +18,24 @@ dependencies {
 ### build.gradle (Module: app)
 
 ```rb
-apply plugin: "androidx.navigation.safeargs.kotlin"
-dependencies {
-    ...
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.0'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
-    ...
-}
+    # MAKE SURE YOU DON'T MISS THIS
+    apply plugin: "androidx.navigation.safeargs.kotlin"
+    # AND THIS
+    dependencies {
+        ...
+        implementation 'androidx.navigation:navigation-fragment-ktx:2.3.0'
+        implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
+        ...
+    }
+    # AND THIS
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    # AND THIS
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
 ```
 
 ### Step 1. Add fragments
