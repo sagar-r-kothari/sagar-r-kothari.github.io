@@ -68,6 +68,9 @@ title: My Bookmarks
 - [ ] Save encrypted files to local storage
 - [ ] Detect Current Location
 - [ ] Show Google Map
+- [x] [Navigation Component](https://classroom.udacity.com/courses/ud9012/lessons/7466f670-3d47-4b60-8f6a-0914ce58f9ad/concepts/5bf1334b-e0cb-40ef-bfd0-7d09a32920e2)
+- [x] [Navigation component, navigate with safe args](https://developer.android.com/guide/navigation/navigation-pass-data)
+- [x] [Overflow menu with Navigation component](https://classroom.udacity.com/courses/ud9012/lessons/7466f670-3d47-4b60-8f6a-0914ce58f9ad/concepts/a92ca36a-facc-45f5-9199-a63a6f8fed33)
 
 ### Android Articles I am referring to
 
