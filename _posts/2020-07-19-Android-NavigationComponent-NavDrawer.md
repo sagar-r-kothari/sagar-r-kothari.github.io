@@ -5,7 +5,7 @@ date: 2020-07-19 07:20:00 +0530
 categories: Android Kotlin
 ---
 
-### build.gradle (Project leve)
+### build.gradle (Project level)
 
 ```rb
 dependencies {
