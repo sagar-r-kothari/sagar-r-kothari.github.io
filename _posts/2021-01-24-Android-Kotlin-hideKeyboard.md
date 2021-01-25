@@ -7,7 +7,6 @@ categories: Android Kotlin
 
 ### How do I dismiss Android Keyboard?
 
-
 ```kt
     fun hideKeyboard() {
         val activity = requireActivity()
