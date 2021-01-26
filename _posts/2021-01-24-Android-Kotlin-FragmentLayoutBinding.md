@@ -30,6 +30,9 @@ plugins {
     id 'kotlin-android'
     id 'androidx.navigation.safeargs.kotlin'
 }
+android {
+    buildFeatures.dataBinding = true
+}
 ```
 
 ### Your fragment should be wrapped inside `<layout>` tag
