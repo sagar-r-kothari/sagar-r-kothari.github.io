@@ -16,7 +16,7 @@ import androidx.security.crypto.MasterKey
 
 @RequiresApi(Build.VERSION_CODES.M)
 object MyAppSecurePreferences {
-    private const val blurPreferencesName = "com-my-app-pref" // change this
+    private const val preferencesName = "com-my-app-pref" // change this
     private const val tokenPreferenceIdentifier = "tokenPreferenceIdentifier"
     private val spec = KeyGenParameterSpec.Builder(
             MasterKey.DEFAULT_MASTER_KEY_ALIAS,
@@ -32,7 +32,7 @@ object MyAppSecurePreferences {
                 .build()
         val sharedPreferences = EncryptedSharedPreferences.create(
                 context,
-                blurPreferencesName,
+                preferencesName,
                 masterKey,
                 EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
                 EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM)
@@ -47,7 +47,7 @@ object MyAppSecurePreferences {
                 .build()
         val sharedPreferences = EncryptedSharedPreferences.create(
                 context,
-                blurPreferencesName,
+                preferencesName,
                 masterKey,
                 EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
                 EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM);
