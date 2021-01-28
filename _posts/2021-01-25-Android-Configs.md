@@ -47,7 +47,7 @@ android {
 
 Open file where you want to access above defined config.
 
-```kt
+```kotlin
 object ServiceBuilder {
     private val client = OkHttpClient.Builder()
 

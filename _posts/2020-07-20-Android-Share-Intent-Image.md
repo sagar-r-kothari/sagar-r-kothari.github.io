@@ -5,7 +5,7 @@ date: 2020-07-20 07:20:00 +0530
 categories: Android Kotlin
 ---
 
-```kt
+```kotlin
 private fun showShareIntent() {
     // Step 1: Create Share itent
     val intent = Intent(Intent.ACTION_SEND).setType("image/*")

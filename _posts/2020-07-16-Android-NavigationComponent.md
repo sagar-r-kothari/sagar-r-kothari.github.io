@@ -90,7 +90,7 @@ dependencies {
 ### Step 4. update ***MainFragment.kt*** as follows.
 
 
-```kt
+```kotlin
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

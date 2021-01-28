@@ -7,7 +7,7 @@ categories: Android Kotlin
 
 Showing share intent from a fragment
 
-```kt
+```kotlin
 class AboutFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

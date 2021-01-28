@@ -38,7 +38,7 @@ android {
 ### Your fragment should be wrapped inside `<layout>` tag
 
 example:
-```
+```xml
 <layout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -51,7 +51,7 @@ example:
 
 ### Open `SomeFragment.kt` file.
 
-```kt
+```kotlin
 class SomeFragment : Fragment() {
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!

@@ -9,10 +9,8 @@ categories: Android Kotlin
 
 Here is String extension for email validation.
 
-```kt
-
+```kotlin
 // StringExtra.kt
-
 import android.text.TextUtils
 
 fun String.isEmailValid(): Boolean {

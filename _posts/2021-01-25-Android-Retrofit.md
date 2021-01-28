@@ -20,7 +20,7 @@ dependencies {
 
 ### Step 2. Open / Create ServiceBuilder file.
 
-```kt
+```kotlin
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -47,7 +47,7 @@ object ServiceBuilder {
 
 ### Step 3. Define Service Interface
 
-```kt
+```kotlin
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.Headers
@@ -62,7 +62,7 @@ interface LoginAPI {
 
 ### Step 4. Open / Create Service file.
 
-```kt
+```kotlin
 class LoginService {
     fun login(
         email: String,

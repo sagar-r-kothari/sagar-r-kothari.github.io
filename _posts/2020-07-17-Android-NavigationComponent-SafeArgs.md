@@ -156,7 +156,7 @@ dependencies {
 
 ### Step 3. update ***MainFragment.kt*** as follows.
 
-```kt
+```kotlin
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -193,7 +193,7 @@ dependencies {
 
 ### Step 5. Update ***DetailFragment.kt***
 
-```kt
+```kotlin
 class DetailFragment : Fragment() {
     val args: AddNewEntryFragmentArgs by navArgs() // <<-- 1. arguments
 

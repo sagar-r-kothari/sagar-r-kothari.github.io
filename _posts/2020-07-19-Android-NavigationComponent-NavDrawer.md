@@ -144,7 +144,7 @@ It should have contents as follows.
 
 ### Step 5. Update ***MainActivity.kt*** code as follows.
 
-```kt
+```kotlin
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

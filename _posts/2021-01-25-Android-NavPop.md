@@ -40,7 +40,7 @@ Here is how you do it.
 
 ### Step 3. Open DashboardFragment.kt file
 
-```kt
+```kotlin
 class DashboardFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
