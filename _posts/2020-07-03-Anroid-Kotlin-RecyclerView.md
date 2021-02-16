@@ -28,28 +28,37 @@ data class ListItem (
 
 ```kotlin
 class MainListAdapter (
-    private val list: List<ListItem>
+    private val list: List<ListItem>,
+    private val onItemClicked: (Int) -> Unit,
 ): RecyclerView.Adapter<MainListAdapter.ViewHolder>() {
 
-    class ViewHolder(view: View): RecyclerView.ViewHolder(view)
+    class ViewHolder(
+        itemView: View,
+        val onItemClicked: (Int
+    ) -> Unit): RecyclerView.ViewHolder(view) {
+        fun bindItems(item: ListItem, position: Int) {
+            itemView.title.text = list[position].title
+            itemView.subtitle.text = list[position].subtitle
+            Glide.with(holder.itemView)  // glide with this view
+                .load(list[position].subtitle) // download using this url
+                .override(250, 250) // set this size
+                .placeholder(R.mipmap.ic_launcher) // default placeHolder image
+                .error(R.mipmap.ic_launcher) // use this image if faile
+                .into(holder.itemView.imageView) // set
+            itemView.setOnClickListener {
+                Log.d("MenuItem", "Clicked on $position")
+                this.onItemClicked(position)
+            }
+        }
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainListAdapter.ViewHolder {
-        return ViewHolder(
-            LayoutInflater
-                .from(parent.context)
-                .inflate(R.layout.list_main, parent, false)
-        )
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
+        return ViewHolder(v, onItemClicked)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.itemView.title.text = list[position].title
-        holder.itemView.subtitle.text = list[position].subtitle
-        Glide.with(holder.itemView)  // glide with this view
-            .load(list[position].subtitle) // download using this url
-            .override(250, 250) // set this size
-            .placeholder(R.mipmap.ic_launcher) // default placeHolder image
-            .error(R.mipmap.ic_launcher) // use this image if faile
-            .into(holder.itemView.imageView) // set
+        holder.bindItems(list[position], position)
     }
 
     override fun getItemCount(): Int {
@@ -65,7 +74,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        listView.adapter = MainListAdapter(listOf<ListItem>(ListItem("Sagar", "Kothari")))
+        listView.adapter = MainListAdapter(listOf<ListItem>(ListItem("Sagar", "Kothari"))) { index ->
+            Log.d("List", "Tapped at index $index")
+        }
     }
 }
 ```

@@ -9,36 +9,10 @@ Let's say, after signing in, App shouldn't go back to login page or any other pa
 
 Here is how you do it.
 
-### Step 1. Open and edit navigation graph as follows.
+### Open `DashboardFragment.kt` file
 
-![Preview Image](/assets/andoid/no-pop.png)
-
-### Step 2. Navigation.xml should look like this.
-
-```xml
-<fragment
-        android:id="@+id/loginFragment"
-        android:name="com.sagar.test.LoginFragment"
-        android:label="@string/app_name"
-        tools:layout="@layout/fragment_login">
-        <action
-            android:id="@+id/action_loginFragment_to_dashboardFragment"
-            app:destination="@id/dashboardFragment"
-
-
-            app:launchSingleTop="true"
-            app:popUpTo="@id/navigation"
-            app:popUpToInclusive="true" 
-
-            
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"/>
-    </fragment>
-```
-
-### Step 3. Open DashboardFragment.kt file
+Basically, with following, we are setting Dashboard Fragment as a root fragment of Nav Controller.
+This means that even if you landed on Dashboard after log-in, pressing back button won't go back to log-in page.
 
 ```kotlin
 class DashboardFragment : Fragment() {

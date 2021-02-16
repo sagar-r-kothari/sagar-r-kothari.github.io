@@ -18,3 +18,17 @@ categories: Android Kotlin
         imm.hideSoftInputFromWindow(view.windowToken, 0)
     }
 ```
+
+
+### How do I force show keyboard?
+
+```
+    fun showKeyboard() {
+        val activity = requireActivity()
+        val imm = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, InputMethodManager.HIDE_IMPLICIT_ONLY)
+    }
+
+someEditText?.requestFocus()
+showKeyboard()
+```
