@@ -34,6 +34,14 @@ Now, add following to your fragment / activity file.
 ```kotlin
 val monthsAdapter = ArrayAdapter(
     requireContext(),
-    android.R.layout.simple_spinner_item, months)
+    android.R.layout.simple_spinner_item, 
+    ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+)
 binding.expMonthFieldEditCard.setAdapter(monthsAdapter)
+
+// to force show all options / suggestions
+monthsAdapter.filter.filter(null)
+binding.expMonthFieldEditCard.setOnClickListener {
+    monthsAdapter.filter.filter(null)
+}
 ```
