@@ -19,7 +19,7 @@ Step 1. Open `AndroidManifest.xml` and add following permission.
 
 Step 2. Open your fragment & add following code to check for permissions.
 
-```kt
+```kotlin
 private fun setupView() {
   var array = arrayOf("android.permission.READ_SMS")
   if (checkSelfPermission(requireContext(), android.Manifest.permission.READ_SMS)
@@ -40,7 +40,7 @@ private fun setupView() {
 
 Step 3. Handle Permissions results.
 
-```kt
+```kotlin
 override fun onRequestPermissionsResult(
     requestCode: Int,
     permissions: Array<out String>,
@@ -67,7 +67,7 @@ override fun onRequestPermissionsResult(
 
 Step 4. Read SMS
 
-```kt
+```kotlin
 private fun readSms() {
     val uri = Uri.parse("content://sms/inbox")
     val cursor = requireActivity()

@@ -54,14 +54,14 @@ Step 6. Configure `activity_main.xml` as follows.
 
 Step 7. Change MainActivity code as follows (inside onCreate)
 
-```kt
+```kotlin
 val navController = this.findNavController(R.id.myNavHostFragment)
 NavigationUI.setupActionBarWithNavController(this, navController)
 ```
 
 Step 8. To set up, navigation up, add following code.
 
-```kt
+```kotlin
 Step 7.
 override fun onSupportNavigateUp(): Boolean {
     val navController = this.findNavController(R.id.myNavHostFragment)
